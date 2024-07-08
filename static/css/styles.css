@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #050C9C;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 7%;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #050C9C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.banner {
+    margin-top: 5px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    position: relative;
+}
+
+.top-image {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    margin: 5px 5px;
+}
+
+.bottom-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro-header {
+    color: #C80036;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: no-wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: #050C9C;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #C21292;
+    border-radius: 5px;
+    animation: move-left-right-first 1.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.host-images {
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.intro-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 80%;
+
+}
+
+.intro-image {
+
+    margin: 20px;
+}
+
+.host-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .introduction {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .intro-image {
+        width: 100%;
+        margin: 5px;
+    }
+}

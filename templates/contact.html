@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <div class="map">
+        <img src="{{ url_for('static', filename='images/map.jpg') }}" alt="Map">
+    </div>
+    <div class="contact-details">
+        <p>Address: 123 Main Street, Simon's Town, South Africa</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@simonstowncycles.co.za</p>
+    </div>
+</section>
+{% endblock %}

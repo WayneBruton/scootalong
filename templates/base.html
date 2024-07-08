@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('news') }}">News</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+<!--    <footer>-->
+<!--        <div class="contact-info">-->
+<!--            <p>123 Main Street, Simon's Town, South Africa</p>-->
+<!--            <p>Phone: 123-456-7890</p>-->
+<!--            <p>Email: info@simonstowncycles.co.za</p>-->
+<!--        </div>-->
+<!--        <div class="social-media">-->
+<!--            <a href="#">Facebook</a>-->
+<!--            <a href="#">Twitter</a>-->
+<!--            <a href="#">Instagram</a>-->
+<!--        </div>-->
+<!--    </footer>-->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

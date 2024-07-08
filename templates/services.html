@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service">
+        <h3>Bike Repair</h3>
+        <p>Professional bike repair services.</p>
+        <img src="{{ url_for('static', filename='images/service1.jpg') }}" alt="Service 1">
+    </div>
+    <div class="service">
+        <h3>Custom Builds</h3>
+        <p>Get a bike built to your specifications.</p>
+        <img src="{{ url_for('static', filename='images/service2.jpg') }}" alt="Service 2">
+    </div>
+    <!-- Add more service descriptions and images -->
+</section>
+{% endblock %}

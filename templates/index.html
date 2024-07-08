@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="banner">
+    <img  src="{{ url_for('static', filename='images/banner1.png') }}" alt="Banner Image" class="top-image">
+    <img  src="{{ url_for('static', filename='images/cape-town.jpg') }}" alt="Banner Image" class="bottom-image">
+</div>
+<!--<section class="introduction">-->
+<!--    <h2>Welcome to Scoot Along</h2>-->
+<!--    <p>Your one-stop shop for all your scooter needs.</p>-->
+<!--</section>-->
+
+<section class="introduction">
+
+    <div class="intro-text">
+        <h2 class="intro-header">WELCOME TO SCOOT ALONG</h2>
+        <h1>YOUR GO-TO DESTINATION FOR ALL THINGS SCOOTER RELATED IN CAPE TOWN</h1>
+        <p>Located conveniently at 66 St. Georges Street, Simon’s Town, we offer top-notch scooter and motorbike rentals, and more. Whether you need to explore the scenic beauty of Cape Town on two wheels, we have you covered. Our dedicated team is committed to providing excellent service.</p>
+    </div>
+    <div class="intro-image">
+        <img style="width: 100%; border-radius: 5%" src="{{ url_for('static', filename='images/fleet.jpeg') }}" alt="Product 2">
+<!--        <p>Product 2 Description</p>-->
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <div class="host-text">
+<!--        <h2 class="intro-header">WELCOME TO SCOOT ALONG</h2>-->
+        <h1>YOUR HOSTS</h1>
+        <p>Gail and Grant, a retired couple who recently returned from England, have found their passion in Scoot Along, a scooter rental and tour company based in Cape Town. With a love for all things two-wheeled, they have embarked on a new adventure, sharing their enthusiasm with locals and visitors alike.
+
+Scoot Along offers a unique way to explore the Mother City and its surrounding areas.<br /><br /> Gail and Grant provide a fleet of well-maintained scooters, ensuring a safe and enjoyable experience for riders of all skill levels. Whether you're a seasoned scooter enthusiast or a first-time rider, they offer comprehensive training and guidance to ensure you feel confident on the road.
+
+One of the highlights of Scoot Along is their guided tours. <br /><br />Gail and Grant have meticulously planned routes that showcase the best of Cape Town's scenic beauty and hidden gems. From the iconic Table Mountain and the vibrant city center to the picturesque coastal roads and charming suburbs, their tours offer a thrilling and immersive way to experience the city[1].
+
+Gail and Grant's passion for scooters is evident in every aspect of their business. They take pride in maintaining their fleet, ensuring that each scooter is in top condition and ready for adventure. Their attention to detail and commitment to safety make Scoot Along a trusted choice for anyone looking to explore Cape Town on two wheels.
+
+But Scoot Along is more than just a rental service; it's a community. <br /><br />Gail and Grant have created a welcoming environment where scooter enthusiasts can connect, share stories, and make new friends. They organize regular group rides and events, fostering a sense of camaraderie among their customers.
+
+As retirees, Gail and Grant have found a new lease on life through Scoot Along. They derive immense joy from sharing their passion with others and seeing the smiles on their customers' faces as they explore the city on their scooters. Their entrepreneurial spirit and dedication to providing an exceptional experience have made Scoot Along a must-visit destination for anyone seeking an unforgettable scooter adventure in Cape Town.
+
+<br /><br />In a city known for its natural beauty and vibrant culture, Scoot Along offers a unique way to experience it all. With Gail and Grant at the helm, scooter enthusiasts can embark on a journey of discovery, making memories that will last a lifetime. So, whether you're a local looking for a new way to explore your city or a visitor seeking an exciting adventure, Scoot Along is the perfect destination for anyone with a passion for two wheels and a thirst for exploration.
+
+</p>
+    </div>
+    <div class="host-images">
+        <img style="width: 100%; border-radius: 5%; margin: 10px 10px" src="{{ url_for('static', filename='images/hosts4.png') }}" alt="Product 2">
+<!--        <img style="width: 100%; border-radius: 5%; margin: 10px 10px" src="{{ url_for('static', filename='images/hosts2.png') }}" alt="Product 2">-->
+<!--        <p>Product 2 Description</p>-->
+    </div>
+</section>
+
+<!--<section class="featured-products">-->
+<!--    <h2>Featured Products</h2>-->
+<!--    <div class="product">-->
+<!--        <img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Product 1">-->
+<!--        <p>Product 1 Description</p>-->
+<!--    </div>-->
+<!--    <div class="product">-->
+<!--        <img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Product 2">-->
+<!--        <p>Product 2 Description</p>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Add other sections such as services overview, latest news, testimonials -->
+{% endblock %}

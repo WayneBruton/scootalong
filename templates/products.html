@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="products">
+    <h2>Our Products</h2>
+    <div class="product-category">
+        <h3>Bikes</h3>
+        <img src="{{ url_for('static', filename='images/bikes.jpg') }}" alt="Bikes">
+    </div>
+    <div class="product-category">
+        <h3>Accessories</h3>
+        <img src="{{ url_for('static', filename='images/accessories.jpg') }}" alt="Accessories">
+    </div>
+    <!-- Add individual product listings -->
+</section>
+{% endblock %}
