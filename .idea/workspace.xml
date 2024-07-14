@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="116360a4-2bfe-4003-99c9-55f50e08cbfb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/WhatsApp Image 2024-05-14 at 15.16.49.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/WhatsApp Image 2024-05-14 at 15.21.30.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bmw-gs310-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bmw-gs310-05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/girl.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
