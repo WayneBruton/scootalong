@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
 </head>
 <body>
-    <header>
-        <div class="logo">
+
+
+<!--    <header>-->
+        <nav class="navbar navbar-expand-lg" style="background-color: #050C9C; position: fixed; z-index: 5; width: 100vw;">
+  <div class="container-fluid">
+      <div class="logo">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="{{ url_for('products') }}">Products</a></li>
-                <li><a href="{{ url_for('services') }}">Services</a></li>
-                <li><a href="{{ url_for('news') }}">News</a></li>
-                <li><a href="{{ url_for('contact') }}">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button class="navbar-toggler" style=" background: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+         <li class="nav-item"><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="nav-item"><a  href="#price">Scooter</a></li>
+                 <li class="nav-item"><a href="#bmw">BMW</a></li>
+                <li class="nav-item"><a href="#bank">Bank</a></li>
+<!--                <li class="nav-item"><a href="{{ url_for('news') }}">News</a></li>-->
+                <li class="nav-item"><a href="#contact-us">Contact / Book</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--    </header>-->
+
     <main>
         {% block content %}{% endblock %}
     </main>
@@ -37,6 +53,10 @@
 <!--            <a href="#">Instagram</a>-->
 <!--        </div>-->
 <!--    </footer>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
