@@ -90,32 +90,32 @@ def send_email(product,number, date_start, date_end, deposit,  name, email, mess
         print("Error:", e)
         return {"message": "Email not sent"}
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+# @app.route('/about')
+# def about():
+#     return render_template('about.html')
 
 
-@app.route('/products')
-def products():
-    return render_template('products.html')
+# @app.route('/products')
+# def products():
+#     return render_template('products.html')
 
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
+# @app.route('/services')
+# def services():
+#     return render_template('services.html')
 
 
-@app.route('/news')
-def news():
-    return render_template('news.html')
+# @app.route('/news')
+# def news():
+#     return render_template('news.html')
 
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    if request.method == 'POST':
-        # Handle form submission
-        pass
-    return render_template('contact.html')
+# @app.route('/contact', methods=['GET', 'POST'])
+# def contact():
+#     if request.method == 'POST':
+#         # Handle form submission
+#         pass
+#     return render_template('contact.html')
 
 
 
