@@ -11,10 +11,31 @@
 
 </head>
 <body>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+
+{% for message in messages %}
+{% if "success" in message %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% else %}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endif %}
+{% endfor %}
+
+
+{% endif %}
+{% endwith %}
 
 
 <!--    <header>-->
-        <nav class="navbar navbar-expand-lg" style="background-color: #050C9C; position: fixed; z-index: 5; width: 100vw;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #4B70F5; position: fixed; z-index: 5; width: 100vw;">
   <div class="container-fluid">
       <div class="logo">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
@@ -27,9 +48,11 @@
          <li class="nav-item"><a href="{{ url_for('home') }}">Home</a></li>
                 <li class="nav-item"><a  href="#price">Scooter</a></li>
                  <li class="nav-item"><a href="#bmw">BMW</a></li>
+          <li class="nav-item"><a href="#ford">FORD</a></li>
                 <li class="nav-item"><a href="#bank">Bank</a></li>
 <!--                <li class="nav-item"><a href="{{ url_for('news') }}">News</a></li>-->
                 <li class="nav-item"><a href="#contact-us">Contact / Book</a></li>
+          <li class="nav-item"><a href="#terms">T's & C's</a></li>
       </ul>
     </div>
   </div>
@@ -57,6 +80,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
