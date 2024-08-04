@@ -41,7 +41,7 @@ def home():
 
 def send_email(product,number, date_start, date_end, deposit,  name, email, message ):
     # scootalong2024 @ gmail.com
-    email_sp = 'waynebruton@icloud.com'
+    email_sp = 'scootalong2024@gmail.com'
     smtp_server = os.getenv('SMTP_SERVER')
     port = os.getenv('SMTP_PORT')
     sender_email = os.getenv('SENDER_EMAIL')
